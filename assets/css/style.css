@@ -130,7 +130,7 @@ body{
     font-size: 18px;
     margin: 20px;
     border-bottom: 0px solid black;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .25s;
 }
 .nav__textonav:hover{
    transform: translateY(-5px);
