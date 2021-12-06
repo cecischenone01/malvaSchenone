@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vinculo externo css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">    
+        <!--menu de navegacion--> 
+            <nav>
+                <!-- logo -->
+                <div class="header__logo">   
+                    <img class="header__logo" src="../assets/img/IMG-20210511-WA0051.jpg " alt="logo">
+                </div>    
+                <!-- nav -->
+                <ul class="nav">            
+                    <li class="nav__animacion">                            
+                        <a class="nav__textonav" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav__animacion">    
+                        <a class="nav__textonav" href="./productos.html">Productos</a>   
+                    </li>
+                    <li class="nav__animacion">    
+                        <a class="nav__textonav" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav__animacion">
+                        <a class="nav__textonav"  href="./envios.html">Envios</a>
+                    </li>
+                    <li class="nav__animacion">    
+                        <a class="nav__textonav" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>         
+            </nav>
+    </header>
+    <section class="seccioncontacto">
+        <div class="contactanos">
+            <h2>¡Contactanos!</h2>
+            <p>Podras enviarnos tu consulta aqui:</p> 
+        </div>
+    <!--formulario-->
+    <form class="form" action="servidor.php">    
+        <div>
+            <label for="Nombre">Nombre:</label>  
+            <input class="recuadro" type="text" name="nombre" placeholder="Escribe tu nombre aqui..."> 
+        </div>      
+        <br>
+        <div>
+            <label for="Apellido">Apellido:</label>
+            <input class="recuadro" type="text" name="Apellido" placeholder="Escribe tu apellido aqui...">
+        </div>   
+        <br>
+        <div>
+            <label for="Email">Email:</label> 
+            <input class="recuadro" type="email" name="mail" placeholder="Juanperez@hotmail.com">  
+        </div>      
+        <br> 
+        <div>
+            <label for="Teléfono">Teléfono:</label>
+            <input class="recuadro" type="tel" name="Teléfono" placeholder="123456789">
+        </div>          
+        <br>    
+        <!--text area -->
+        <p>Mensaje</p>  
+            <textarea class="recuadro" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>   
+            <br>      
+            <input class="boton" type= "submit" value="Enviar">       
+    </form>
+    </section>
+    <footer class="footer">    
+            <div>
+                <div class="footer__text">
+                    <h2>Medios de pago</h2>
+                    <div>
+                        <h3>DÉBITO</h3>
+                        <h3>CRÉDITO</h3>
+                        <h3>EFECTIVO</h3>
+                        <h3>TRANSFERENCIA</h3>
+                    </div>
+                </div>
+                <div class="footer__text">
+                    <h2>Formas de envío</h2>
+                    <div>
+                        <h3>OCA</h3>
+                        <h3>CORREO ARGENTINO</h3>
+                    </div>
+                </div>
+                <div class="footer__text">
+                    <h2>Contacto</h2>
+                    <p>Tel:3416736383</p>
+                </div>
+                <div>
+                    <img  class="footer__redes" src="../assets/icons/2993778_facebook_social media_icon.svg"facebook">
+                    <img  class="footer__redes" src="../assets/icons/4102579_applications_instagram_media_social_icon.svg" alt="instagram">
+                    <img  class="footer__redes" src="../assets/icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp">
+                </div>
+            </div>
+        <p class="footer__copy">Copyright 2021 Malva</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1020 @@
+@font-face {
+    font-family:'monserrat light' ;
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family:'monserrat sBold' ;
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+/*header*/
+.header{
+    background-color: rgba(253, 253, 253, 0.938);
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__logo{
+    border-radius: 100%;
+    margin-left: 60px;
+}
+.header__logo img{
+    width: 120px;
+    border-radius: 100%;
+}
+/*media query header*/
+/*mobile*/
+@media (max-width:320px){
+    .header{
+        width: 100vw;
+        height: 15vh;
+    }
+    .header__logo{
+        width: 15%;
+        margin-left: 10px;
+    }
+    .header__logo img{
+        width: 100%;
+    }
+}
+/*mobile*/
+@media (min-width:321px) and (max-width:480px) {
+    .header{
+        height:20vh ;
+        width: 100vw ;
+    }
+    .header__logo{
+        width: 20%;
+    margin-left: 6px;
+    }
+    .header__logo img{
+        width: 100%;
+    }
+}
+/*mobile*/
+@media ( min-width:481px) and (max-width: 600px) {
+    .header{
+        width: 100vw;
+        height: 20vh;
+    }
+    .header__logo{
+        width: 15%;
+        margin-left: 20px;
+    }
+    .header__logo img{
+        width: 100%;
+    }
+}
+/*tableta*/
+@media ( min-width:601px) and (max-width: 768px) {
+    .header{
+        width: 100vw;
+        height: 20vh;
+    }
+    .header__logo{
+        width: 20%;
+        margin-left: 30px;
+    }
+    .header__logo img{
+        width: 100%;
+    }
+}
+
+/*navegacion*/
+.nav{
+    width:100vw;
+    height: 100px;
+    list-style-type: none;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu{
+    width: 80vw;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.nav__links{
+    display: inline-block;
+    width: auto;
+    border-radius: 10px;
+}
+
+.nav__textonav{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'monserrat light';
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav__animacion :hover{
+    transition: all ease-in-out .2s;
+    background-color: rgba(245, 213, 127, 0.384);
+}
+/*media query nav*/
+/*mobile*/
+@media (max-width:320px){
+    .nav{
+        width: 20vw;
+        }
+        .nav__menu{
+        width: 20vw;
+        }
+        .nav__textonav{
+        font-size: 6px;
+        }
+}
+/*mobile*/
+@media (min-width:321px) and (max-width:480px) {
+    .nav{
+    width:50vw;
+    margin-left: auto;
+    align-items: end;
+    }
+    .nav__menu{
+        width:10vw;
+        height: 7vh;
+    }
+    .nav__textonav{
+    font-size: 8px;
+    }
+}
+/*tableta*/
+@media (min-width:481px) and (max-width:600px){
+    .nav{
+        width:50vw;
+        margin-left: 40px;
+    }
+    .nav__menu{
+    width: 50vw;
+    }
+    .nav__textonav{
+        font-size: 10px;
+    }
+}
+/*tableta*/
+@media (min-width:601px) and (max-width:768px){
+    .nav{
+        width:100vw;
+        margin-left: 80px;
+    }
+    .nav__menu{
+    width: 50vw;
+    }
+    .nav__textonav{
+        font-size: 15px;
+    }
+}
+/*tableta*/
+@media (min-width:768px) and (max-width:1023px){
+    .nav{
+        width:50vw;
+        margin-left: 60px;
+    }
+    .nav__menu{
+    width: 50vw;
+    }
+    .nav__textonav{
+        font-size: 18px;
+    }
+}
+/*introduccion*/
+.intro {
+    height: 600px;
+    width: 100vw;
+    background-image: url(../img/marco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.intro__texto{
+    font-family:'monserrat light'  ;
+    font-size: 40px;
+    background-color: transparent;
+    margin-left: 40px;
+}
+
+main article{
+    width: 800px;
+    height: 300px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.intro__texto--a{
+    width: 50%;  
+    font-family:'monserrat light'  ;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px ;    
+}
+/*media query introduccion*/
+/*mobile*/
+@media (max-width:320px){
+    .intro{
+        width: 100vw;
+        height: 50vh;
+    }
+    .intro__texto{
+    width:60% ;
+    font-size: 12px;
+    }
+    .intro__texto--a{
+        width: 60%;
+        height: auto;
+        font-size: 10px;
+    }
+}
+/*mobile*/
+@media (min-width:321px) and (max-width: 480px) {
+    .intro{
+    width: 100vw;
+    height:70vh;
+    }
+    .intro__texto{
+    width: 70vw;
+    height: auto;
+    font-size: 13px;
+    }
+    .intro__texto--a{
+        width: 70vw;
+        height: auto;
+        font-size: 13px;
+    }
+}
+/*tableta*/
+@media (min-width:481px) and (max-width: 600px) {
+    .intro {
+        width: 100vw;
+        height: 50vh;
+    }
+    .intro__texto{
+        width: 50vw;
+        height: 10vh;
+        font-size: 15px;
+    }
+    .intro__texto--a {
+        width: 50vw;
+        height: 30vh;
+        font-size: 13px;
+    }
+}
+/*tableta*/
+@media (min-width:601px) and (max-width: 768px) {
+    .intro {
+        width: 100vw;
+        height: 90vh;
+    }
+    .intro__texto{
+        width: 50vw;
+        height: 5vh;
+        font-size: 20px;
+    }
+    .intro__texto--a {
+        width: 60vw;
+        height: 40vh;
+        font-size: 20px;
+    }
+}
+
+/*productos destacados*/
+.secdestacados{
+    width: 100vw;
+    height: 700px;
+    background-color:#dad3d3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10px ;
+    grid-template-areas:
+    "productos productos productos"
+    "destacado1 destacado2 destacado3";
+    justify-items: center;
+    align-items: center;
+}
+
+.textolinea{
+    width: 100vw;
+    height: 10vh;
+    background-color: #ebebeb;
+    font-family: "monserrat light";
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    grid-area: productos;
+}
+
+.imagen-destacado{
+    width: 280px;
+    height: 390px;
+    padding: 15px 10px 40px 30px;
+}
+
+.destacado1{
+    width:22vw;
+    height: 75vh;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
+    grid-area: destacado1;
+}
+
+.destacado2{
+    width: 22vw;
+    height: 75vh;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
+    grid-area: destacado2;
+}
+
+.destacado3{
+    width: 22vw;
+    height: 75vh;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
+    grid-area: destacado3;
+}
+
+.precio{
+    font-family: "monserrat sbold";
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nombre-producto{
+    font-family: "monserrat light";
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*media query productos destacados*/
+/*mobile*/
+@media (max-width:320px){
+    .secdestacados{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"destacado1"
+                        "destacado2"
+                        "destacado3";
+    }
+    .destacado1{
+    width: 50%;
+    height:90% ;
+    }
+    .destacado2{
+    width: 50%;
+    height:90% ;
+    }
+    .destacado3{
+    width: 50%;
+    height:90% ;
+    }
+    .imagen-destacado{
+        width: 90%;
+        height:100% ;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 6vh;
+        font-size: 10px;
+    }
+}
+/*mobile*/
+@media (min-width:321px) and (max-width: 480px) {
+    .secdestacados{
+    width: 100vw;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"destacado1"
+                        "destacado2"
+                        "destacado3";
+    }
+    .destacado1{
+    width: 50%;
+    height: 70% ;
+    }
+    .destacado2{
+    width: 50%;
+    height: 70%;
+    }
+    .destacado3{
+    width: 50%;
+    height: 70%;
+    }
+    .imagen-destacado{
+    width:90%;
+    height: 80%;
+    }
+    .textolinea{
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    font-size: 13px;
+    }
+    .nombre-producto{
+        font-size: 13px;
+    }
+    .precio{
+        font-size: 15px;
+    }
+}
+/*tableta*/
+@media (min-width:481px) and (max-width: 600px) {
+    .secdestacados{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"destacado1"
+                        "destacado2 " 
+                        "destacado3";
+    }
+    .destacado1{
+    width: 30%;
+    height: 90%;
+    }
+    .destacado2{
+    width: 30%;
+    height: 90%;
+    }
+    .destacado3{
+    width: 30%;
+    height: 90%;
+    }
+    .imagen-destacado{
+    width:80%;
+    height: 90%;
+    }
+    .textolinea {
+    width: 100vw;
+    height: 8vh;
+    font-size: 15px;
+    text-align: center;
+    }
+    .nombre-producto{
+    font-size: 13px;
+    }
+    .precio{
+    font-size: 15px;
+    }
+}
+/*tableta*/
+@media (min-width:601px) and (max-width:768px) {
+    .secdestacados{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"destacado1 destacado2 destacado3";
+    }
+    .destacado1{
+    width: 80%;
+    height: 50%;
+    }
+    .destacado2{
+    width: 80%;
+    height: 50%;
+    }
+    .destacado3{
+    width: 80%;
+    height: 50%;
+    }
+    .imagen-destacado{
+    width:90%;
+    height: 80%;
+    }
+    .textolinea {
+    width: 100vw;
+    height: 8vh;
+    font-size: 15px;
+    text-align: center;
+    }
+    .nombre-producto{
+    font-size: 13px;
+    }
+    .precio{
+    font-size: 15px;
+    }
+}
+/*tableta*/
+@media (min-width:769px) and (max-width:1023px) {
+    .secdestacados{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"destacado1 destacado2 destacado3";
+    }
+    .destacado1{
+    width: 80%;
+    height: 55%;
+    }
+    .destacado2{
+    width: 80%;
+    height: 55%;
+    }
+    .destacado3{
+    width: 80%;
+    height: 55%;
+    }
+    .imagen-destacado{
+    width:90%;
+    height: 80%;
+    }
+    .textolinea {
+    width: 100vw;
+    height: 8vh;
+    font-size: 15px;
+    text-align: center;
+    }
+    .nombre-producto{
+    font-size: 13px;
+    }
+    .precio{
+    font-size: 15px;
+    }
+}
+
+/*footer*/
+.footer{
+    width: 100vw;
+    height: 150px;
+    background-color:#ebebeb;
+    display: grid;
+    grid-template-areas: 
+    "mp envios contacto copy redes";
+    grid-template-columns: 1fr 1fr 1fr 3fr 2fr;
+    grid-template-rows: 170px;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.footer__mp{
+    display: inline-block;
+    font-family: 'monserrat light';
+    font-size: 10px;
+    grid-area: mp;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+
+.footer__envios{
+    display: inline-block;
+    font-family: 'monserrat light';
+    font-size: 10px;
+    grid-area: envios;
+    margin-bottom: 63px;
+    margin-left: 15px;
+    justify-self: center;
+}
+
+.footer__contacto{
+    display: inline-block;
+    font-family: 'monserrat light';
+    font-size: 10px;
+    grid-area: contacto;
+    margin-bottom: 75px;
+    justify-self: center;
+}
+
+.footer__redes{
+    width:16vw;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: redes;
+}
+.facebook{
+    width: 40px;
+    margin: 3px 3px 3px 3px;
+}
+.instagram{
+    width: 40px;
+    margin: 3px 3px 3px 3px;
+}
+.whatsapp{
+    width: 40px;
+    margin: 3px 3px 3px 3px;
+}
+
+.footer__copy{
+    text-align:center;
+    font-family: 'monserrat light';
+    font-size: 13px;
+    grid-area: copy;
+}
+/*media query footer*/
+/*mobile*/
+@media (max-width:320px){
+    .footer{
+        width: 100vw;
+        height:50vh ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:"mp"
+                            "envios"
+                            "contacto"
+                            "redes"
+                            "copy";
+    }
+    .footer__mp{
+        font-size: 7px;
+    }
+    .footer__envios{
+        font-size: 7px;
+    }
+    .footer__contacto{
+        font-size: 7px;
+    }
+    .footer__redes{
+        width: 50vw;
+    }
+    .footer__copy{
+        font-size: 7px;
+    }
+}
+/*mobile*/
+@media (min-width:321px) and (max-width: 480px) {
+    .footer{
+        width: 100vw;
+        height: 50vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:"mp"
+                            "envios"
+                            "contacto"
+                            "redes"
+                            "copy";
+    }
+    .footer__mp{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    padding-top: 10px;
+    margin-left: 20px;
+    }
+    .footer__envios{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin-left: 20px;
+    }
+    .footer__contacto{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin-left: 20px;
+        }
+    .footer__redes{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    }
+    .footer__copy{
+    font-size: 10px;
+    }
+}
+/*tableta*/
+@media (min-width:481px) and (max-width:600px) {
+    .footer{
+        width:100vw;
+        height: 50vh;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:"mp"
+                            "envios"
+                            "contacto"
+                            "redes"
+                            "copy";
+    }
+    .footer__mp{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        padding-top: 10px;
+        margin-left: 20px;
+        }
+        .footer__envios{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-left: 20px;
+        }
+        .footer__contacto{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-left: 20px;
+        }
+        .footer__redes{
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 20px;
+        }
+        .footer__copy{
+        width:10vw ;
+        font-size: 8px;
+        }
+}
+/*tableta*/
+@media (min-width:601px) and (max-width:768px){
+    .footer{
+        width:100vw;
+        height: 20vh;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:"mp envios contacto redes copy";
+    }
+    .footer__mp{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 15px;
+        margin-left: 20px;
+        }
+        .footer__envios{
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 20px;
+        margin-left: 20px;
+        }
+        .footer__contacto{
+            font-size: 8px;
+            display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        margin-top: 21px;
+        margin-left: 20px;
+            }
+        .footer__redes{
+        width: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 20px;
+        }
+        .footer__copy{
+            width: ;
+        font-size: 8px;
+        }
+}
+
+.seccioncontacto {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/materiales-macrame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom:10px;
+}
+
+.contactanos{
+    font-family:'monserrat light' ;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.644);
+    text-align: center ;
+    font-size: 20px;
+    height: 100px;
+    padding-top: 10px;
+}
+.form{
+    width: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    font-family: 'monserrat sbold';
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+    margin: 60px 60px 30px 320px;
+}
+
+.recuadro{
+    font-size: 20px;
+    line-height: 10px;
+    border: 1px solid rgb(117, 110, 110);
+    padding: 5px
+}
+
+.boton{
+    background-color: rgba(235, 211, 207, 0.329);
+    color: rgb(85, 74, 74);
+    height: 30px;
+    width: 100px;
+    font-family: 'monserrat sbold';
+    font-size: 15px;
+    border-radius: 5%;
+    margin-top: 10px;
+    padding: 5px;
+    border-color:rgb(85, 74, 74);
+}
+
+.seccionenvios{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hilos.jpg);
+    background-size: cover;
+}
+
+.textolinea--envios{
+    background-color:#ebebeb;
+    font-size: 15px;
+}
+
+.comprar{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 1px solid black;
+    display: inline-block;
+    font-family:'monserrat light';
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    margin: 100px 50px 100px 50px;
+    line-height: 40px;
+}
+
+.sucursales{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 1px solid black;
+    font-family:'monserrat light';
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+    display: inline-block;
+    line-height: 50px;
+    margin: 20px 40px 20px 40px;
+}
+
+.titulo{
+    background-color: rgba(217, 185, 230, 0.534);
+    text-align: center;
+}
+
+.seccion-nosotros{
+    height: 1000px;
+    background-image: url(../img/textura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textonosotros{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.678);
+    font-family: monserrat light;
+    font-size: 20px;
+    padding: 50px 50px 50px 50px;
+}
+.video{
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.seccion-productos{
+    height: 1300px;
+    position: relative;
+}
+
+.filtro{
+    background-color: #ebebeb;
+    font-family: monserrat sbold;
+    font-size: 15px;
+    padding: 20px 10px 20px 10px;
+}
+
+.boton-filtro{
+    font-family: monserrat light;
+    margin-top: 10px;
+}
+
+.tarjeta1{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    position: absolute;
+    top:150px ;
+    left:40px ;
+}
+
+.tarjeta2{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    position: absolute;
+    top:150px ;
+    left:370px ;
+}
+
+.tarjeta3{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+    position: absolute;
+    top:150px ;
+    left:650px ;
+}
+.tarjeta4{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    position: absolute;
+    top: 700px ;
+    left: 40px ;
+}
+.tarjeta5{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    position: absolute;
+    top:700px ;
+    left: 370px ;
+}
+.tarjeta6{
+    width:300px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+    position: absolute;
+    top:700px ;
+    left:650px ;
+}
+
+.imagen-tarjeta{
+    width: 300px;
+    height: 380px;
+    padding: 30px 30px 40px 30px;
+    
+}
+
+.pie{
+    font-family: monserrat light;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
