@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- vinculo externo css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Malva Weave</title>
@@ -13,7 +15,7 @@
     <header class="header">    
         <!-- logo -->
         <div class="header__logo">   
-            <img src="./assets/img/IMG-20210511-WA0051.jpg" alt="logo">
+            <img class="img-fluid" src="./assets/img/IMG-20210511-WA0051.jpg" alt="logo">
         </div> 
         <!--menu de navegacion  -->
             <nav class="nav">
@@ -31,57 +33,89 @@
             Qisquam excepturi sed repellendus, vel atque consequuntur est blanditiis iure .</p>
         </article>
     </main>
-    <section>
-            <div>
-                <h3 class="textolinea">PRODUCTOS DESTACADOS:</h3>
+<section class="secdestacados">
+    <div class="textolinea">
+        <p>PRODUCTOS DESTACADOS</p>
+    </div>
+    <div class="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-                <div class="secdestacados">
-                    <div class="destacado">
-                        <img class="imagen-destacado" src="./assets/img/maceterotriple2.jpg" alt="macetero triple">   
-                        <h4 class="nombre-producto">MACETERO TRIPLE</h4>
-                        <h5 class="precio">$1500</h5>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="imagen-carrusel" src="./assets/img/maceterotriple2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MACETERO</h5>
+                  <p>$1000</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagen-carrusel" src="./assets/img/tapiz grande.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TAPIZ</h5>
+                  <p>$1500</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagen-carrusel" src="./assets/img/almohadones.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ALMOHADONES</h5>
+                  <p>$1200</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</section>
+    <footer class="">    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h3>Medios de pago</h3>
+                    <p>DÉBITO</p>
+                    <p>CRÉDITO</p>
+                    <p>EFECTIVO</p>
+                    <p>TRANSFERENCIA</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                        <h3>Formas de envío</h3>
+                        <p>OCA</p>
+                        <p>CORREO ARGENTINO</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h3>Contacto</h3>
+                    <p>Tel:3416736383</p>
+                </div>
+                <div class=" footer__redes col-sm-12 col-md-3">
+                    <div>
+                        <img class="facebook" src="./assets/icons/2993778_facebook_social media_icon.svg" alt="facebook">
                     </div>
-                    <div class="destacado">   
-                        <img class="imagen-destacado" src="./assets/img/tapiz grande.jpg" alt="tapiz grande">
-                        <h4 class="nombre-producto">TAPIZ</h4>
-                        <h5 class="precio">$900</h5>
+                    <div>
+                        <img class="instagram" src="./assets/icons/4102579_applications_instagram_media_social_icon.svg" alt="instagram">
                     </div>
-                    <div class="destacado">       
-                        <img class="imagen-destacado" src="./assets/img/almohadones.jpg" alt="almohadones">
-                        <h4 class="nombre-producto">ALMOHADONES</h4>
-                        <h5 class="precio">$1500</h5>
+                    <div>
+                        <img class="whatsapp" src="./assets/icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp">
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" footer__copy col-sm-12 col-md-3 d-flex align-items-center justify-content-center">
+                    <p>Copyright 2021 Malva</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <footer class="footer">    
-            <div class="footer__mp">
-                <h2>Medios de pago</h2>
-                <p>DÉBITO</p>
-                <p>CRÉDITO</p>
-                <p>EFECTIVO</p>
-                <p>TRANSFERENCIA</p>
-            </div>
-            <div class="footer__envios">
-                    <h2>Formas de envío</h2>
-                    <p>OCA</p>
-                    <p>CORREO ARGENTINO</p>
-            </div>
-            <div class="footer__contacto">
-                <h2>Contacto</h2>
-                <p>Tel:3416736383</p>
-            </div>
-            <div class="footer__redes">
-                <div>
-                    <img class="facebook" src="./assets/icons/2993778_facebook_social media_icon.svg" alt="facebook">
-                </div>
-                <div>
-                    <img class="instagram" src="./assets/icons/4102579_applications_instagram_media_social_icon.svg" alt="instagram">
-                </div>
-                <div>
-                    <img class="whatsapp" src="./assets/icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp">
-                </div>
-            </div>
-        <p class="footer__copy">Copyright 2021 Malva</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </ht
