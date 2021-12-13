@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- vinculo externo css -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Productos</title>
@@ -27,74 +29,125 @@
     <section class="seccion-productos">
         <!-- boton -->
         <div class="filtro">
-            <h3>Filtrar productos por:</h3>
-            <select class="boton-filtro" name="filtrar por:" id="filtrar por">   
-                <option value="mayor precio">Mayor precio</option>
-                <option value="menor precio">Menor precio</option>
-                <option value="más vendidos">Más vendidos</option>
-            </select>   
+            <h3>Filtrar productos por:</h3>   
         </div>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Filtrar por :
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+              <li><a class="dropdown-item" href="#">Menor precio</a></li>
+              <li><a class="dropdown-item" href="#">Más vendidos</a></li>
+            </ul>
+          </div>
         <!-- imagenes -->
-        <div class="tarjeta1">
-            <img class="imagen-tarjeta" src="../assets/img/tapiz plumas.jpg" alt="tapiz plumas" width="15%">
-            <h3 class="pie">Producto A</h3>
-            <h4 class="pie">$2500</h4>
-        </div>
-        <div class="tarjeta2">
-            <img class="imagen-tarjeta" src="../assets/img/3espejos.jpg" alt="3 espejos"width="15%">
-            <h3 class="pie">Producto B</h3>
-            <h4 class="pie">$1900</h4>
-        </div>
-        <div class="tarjeta3">
-            <img class="imagen-tarjeta" src="../assets/img/posavasos (2).jpg" alt="posavasos" width="15%">
-            <h3 class="pie">Producto C</h3>
-            <h4 class="pie">$1000</h4>
-        </div>
-        <div class="tarjeta4">
-            <img class="imagen-tarjeta" src="../assets/img/camino.jpg" alt="camino de mesa" width="15%">
-            <h3 class="pie">Producto D</h3>
-            <h4 class="pie">$1200</h4>
-        </div>
-        <div class="tarjeta5">
-            <img class="imagen-tarjeta" src="../assets/img/espejo marron grande.jpg" alt="espejo" width="15%">
-            <h3 class="pie">Producto E</h3>
-            <h4 class="pie">$1500</h4>
-        </div>
-        <div class="tarjeta6">
-            <img class="imagen-tarjeta" src="../assets/img/almohadones.jpg" alt="almohadones" width="15%">
-            <h3 class="pie">Producto F</h3>
-            <h4 class="pie">$1600</h4>
-        </div>
-    </section>
-        <footer class="footer">    
-            <div>
-                <div class="footer__text">
-                    <h2>Medios de pago</h2>
-                    <div>
-                        <h3>DÉBITO</h3>
-                        <h3>CRÉDITO</h3>
-                        <h3>EFECTIVO</h3>
-                        <h3>TRANSFERENCIA</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;" alt="...">
+                        <div class="card-body">
+                        <img class="imagen-tarjeta" src="../assets/img/tapiz plumas.jpg" class="card-img-top
+                          <h5 class="card-title">TAPIZ DE PLUMAS</h5>
+                          <p class="card-text">$1000</p>
+                          <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                    <img class="imagen-tarjeta" src="../assets/img/3espejos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">SET DE ESPEJOS</h5>
+                      <p class="card-text">$2000</p>
+                      <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
                     </div>
+                  </div>
                 </div>
-                <div class="footer__text">
-                    <h2>Formas de envío</h2>
-                    <div>
-                        <h3>OCA</h3>
-                        <h3>CORREO ARGENTINO</h3>
-                    </div>
-                </div>
-                <div class="footer__text">
-                    <h2>Contacto</h2>
-                    <p>Tel:3416736383</p>
-                </div>
-                <div>
-                    <img  class="footer__redes" src="../assets/icons/2993778_facebook_social media_icon.svg" alt="facebook">
-                    <img  class="footer__redes" src="../assets/icons/4102579_applications_instagram_media_social_icon.svg" alt="instagram">
-                    <img  class="footer__redes" src="../assets/icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="imagen-tarjeta" src="../assets/img/posavasos (2).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">POSAVASOS</h5>
+                          <p class="card-text">$500</p>
+                          <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        </div>
+                      </div>
                 </div>
             </div>
-            <p class="footer__copy">Copyright 2021 Malva</p>
-        </footer>
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="imagen-tarjeta" src="../assets/img/camino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">CAMINO DE MESA</h5>
+                          <p class="card-text">$1500</p>
+                          <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="imagen-tarjeta" src="../assets/img/espejo marron grande.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">ESPEJO GRANDE</h5>
+                          <p class="card-text">$1500</p>
+                          <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="imagen-tarjeta" src="../assets/img/almohadones.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">ALMOHADONES</h5>
+                          <p class="card-text">$1800</p>
+                          <a href="#" class="btn btn-primary">AGREGAR AL CARRITO<</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="">    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <h3>Medios de pago</h3>
+                    <p>DÉBITO</p>
+                    <p>CRÉDITO</p>
+                    <p>EFECTIVO</p>
+                    <p>TRANSFERENCIA</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                        <h3>Formas de envío</h3>
+                        <p>OCA</p>
+                        <p>CORREO ARGENTINO</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h3>Contacto</h3>
+                    <p>Tel:3416736383</p>
+                </div>
+                <div class=" footer__redes col-sm-12 col-md-3">
+                    <div>
+                        <img class="facebook" src="../assets/icons/2993778_facebook_social media_icon.svg" alt="facebook">
+                    </div>
+                    <div>
+                        <img class="instagram" src="../assets/icons/4102579_applications_instagram_media_social_icon.svg" alt="instagram">
+                    </div>
+                    <div>
+                        <img class="whatsapp" src="../assets/icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" footer__copy col-sm-12 col-md-3 d-flex align-items-center justify-content-center">
+                    <p>Copyright 2021 Malva</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ body{
 @media (max-width:320px){
     .header{
         width: 100vw;
-        height: 15vh;
+        height: 50px;
     }
     .header__logo{
         width: 15%;
@@ -54,8 +54,8 @@ body{
 /*mobile*/
 @media (min-width:321px) and (max-width:480px) {
     .header{
-        height:20vh ;
-        width: 100vw ;
+        width: 100vw;
+        height: 80px;
     }
     .header__logo{
         width: 20%;
@@ -101,6 +101,7 @@ body{
     list-style-type: none;
     margin-right: 100px;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -113,12 +114,6 @@ body{
     flex-flow: row nowrap;
     justify-content: space-evenly;
 }
-
-/* .nav__links{
-    display: inline-block;
-    width: auto;
-    border-radius: 10px;
-} */
 
 .nav__textonav{
     text-decoration: none;
@@ -133,8 +128,8 @@ body{
     transition: all ease-in-out .25s;
 }
 .nav__textonav:hover{
-   transform: translateY(-5px);
-   border-bottom: 1px solid black;
+    transform: translateY(-5px);
+    border-bottom: 1px solid black;
 }
 .nav__animacion :hover{
     transition: all ease-in-out .2s;
@@ -145,14 +140,14 @@ body{
 /*mobile*/
 @media (max-width:320px){
     .nav{
-        width: 20vw;
-        }
-        .nav__menu{
-        width: 20vw;
-        }
-        .nav__textonav{
-        font-size: 6px;
-        }
+    width: 20vw;
+    }
+    .nav__menu{
+    width: 20vw;
+    }
+    .nav__textonav{
+    font-size: 6px;
+    }
 }
 /*mobile*/
 @media (min-width:321px) and (max-width:480px) {
@@ -220,19 +215,14 @@ body{
     align-items: center;
 }
 
+main article{
+    width: 100vw;
+}
 .intro__texto{
     font-family:'monserrat light'  ;
     font-size: 40px;
     background-color: transparent;
     margin-left: 40px;
-}
-
-main article{
-    width: 800px;
-    height: 300px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .intro__texto--a{
@@ -247,14 +237,17 @@ main article{
 @media (max-width:320px){
     .intro{
         width: 100vw;
-        height: 50vh;
+        height: 180px;
+    }
+    main article{
+        width: 100vw;
     }
     .intro__texto{
     width:60% ;
     font-size: 12px;
     }
     .intro__texto--a{
-        width: 60%;
+        width: 80%;
         height: auto;
         font-size: 10px;
     }
@@ -263,17 +256,17 @@ main article{
 @media (min-width:321px) and (max-width: 480px) {
     .intro{
     width: 100vw;
-    height:70vh;
+    height:200px;
     }
     .intro__texto{
     width: 70vw;
     height: auto;
-    font-size: 13px;
+    font-size: 10px;
     }
     .intro__texto--a{
         width: 70vw;
-        height: auto;
-        font-size: 13px;
+        height: 123px;
+        font-size: 10px;
     }
 }
 /*tableta*/
@@ -314,13 +307,12 @@ main article{
 /*productos destacados*/
 .secdestacados{
     width: 100vw;
-    height: 700px;
+    height: 100%;
     background-color:#dad3d3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     max-width: 100%;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -335,118 +327,40 @@ main article{
     padding-top: 10px;
     
 }
-
-.imagen-destacado{
-    width: 280px;
-    height: 390px;
-    padding: 15px 10px 40px 30px;
+.carrusel{
+    width: 60%;
+    height: 600px;
 }
-
-.destacado{
-    cursor: pointer;
-    width:300px;
-    height: 470px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
-    transition: all ease-in-out .3s;
-}
-.destacado:hover{
-    transform: translateY(-10px);
-}
-/* 
-.destacado2{
-    width: 22vw;
-    height: 75vh;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
-    grid-area: destacado2;
-}
-
-.destacado3{
-    width: 22vw;
-    height: 75vh;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 1px 10px 5px rgba(112, 112, 112, 0.466);
-    grid-area: destacado3;
-} */
-
-.precio{
-    font-family: "monserrat sbold";
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.nombre-producto{
-    font-family: "monserrat light";
-    font-size: 15px;
-    text-transform: uppercase;
-    text-align: center;
+.imagen-carrusel{
+    width: 100%;
+    height: 500px;
 }
 /*media query productos destacados*/
 /*mobile*/
 @media (max-width:320px){
     .secdestacados{
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:"destacado1"
-                        "destacado2"
-                        "destacado3";
-    }
-    .destacado1{
-    width: 50%;
-    height:90% ;
-    }
-    .destacado2{
-    width: 50%;
-    height:90% ;
-    }
-    .destacado3{
-    width: 50%;
-    height:90% ;
-    }
-    .imagen-destacado{
-        width: 90%;
-        height:100% ;
+    height: 300px;
     }
     .textolinea{
         width: 100vw;
-        height: 6vh;
+        height: 30px;
         font-size: 10px;
     }
+    .imagen-carrusel{
+        width: 100vw;
+        height: 300px;
+    }
+    .carrusel{
+        width: 100vw;
+        height: 300px ;
+        }
 }
 /*mobile*/
 @media (min-width:321px) and (max-width: 480px) {
     .secdestacados{
     width: 100vw;
-    height: 180vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:"destacado1"
-                        "destacado2"
-                        "destacado3";
-    }
-    .destacado1{
-    width: 50%;
-    height: 70% ;
-    }
-    .destacado2{
-    width: 50%;
-    height: 70%;
-    }
-    .destacado3{
-    width: 50%;
-    height: 70%;
-    }
-    .imagen-destacado{
-    width:90%;
-    height: 80%;
+    height: 300px;
     }
     .textolinea{
     width: 100vw;
@@ -454,40 +368,16 @@ main article{
     text-align: center;
     font-size: 13px;
     }
-    .nombre-producto{
-        font-size: 13px;
-    }
-    .precio{
-        font-size: 15px;
-    }
+    .carrusel{
+        width: 100vw;
+        height: 300px ;
+        }
 }
 /*tableta*/
 @media (min-width:481px) and (max-width: 600px) {
     .secdestacados{
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:"destacado1"
-                        "destacado2 " 
-                        "destacado3";
-    }
-    .destacado1{
-    width: 30%;
-    height: 90%;
-    }
-    .destacado2{
-    width: 30%;
-    height: 90%;
-    }
-    .destacado3{
-    width: 30%;
-    height: 90%;
-    }
-    .imagen-destacado{
-    width:80%;
-    height: 90%;
+    height: 400px;
     }
     .textolinea {
     width: 100vw;
@@ -495,38 +385,16 @@ main article{
     font-size: 15px;
     text-align: center;
     }
-    .nombre-producto{
-    font-size: 13px;
-    }
-    .precio{
-    font-size: 15px;
-    }
+    .carrusel{
+        width: 100vw;
+        height: auto;
+        }
 }
 /*tableta*/
 @media (min-width:601px) and (max-width:768px) {
     .secdestacados{
     width: 100vw;
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:"destacado1 destacado2 destacado3";
-    }
-    .destacado1{
-    width: 80%;
-    height: 50%;
-    }
-    .destacado2{
-    width: 80%;
-    height: 50%;
-    }
-    .destacado3{
-    width: 80%;
-    height: 50%;
-    }
-    .imagen-destacado{
-    width:90%;
-    height: 80%;
+    height:600px;
     }
     .textolinea {
     width: 100vw;
@@ -534,73 +402,67 @@ main article{
     font-size: 15px;
     text-align: center;
     }
-    .nombre-producto{
-    font-size: 13px;
-    }
-    .precio{
-    font-size: 15px;
-    }
+    
 }
 /*tableta*/
 @media (min-width:769px) and (max-width:1023px) {
     .secdestacados{
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:"destacado1 destacado2 destacado3";
-    }
-    .destacado1{
-    width: 80%;
-    height: 55%;
-    }
-    .destacado2{
-    width: 80%;
-    height: 55%;
-    }
-    .destacado3{
-    width: 80%;
-    height: 55%;
-    }
-    .imagen-destacado{
-    width:90%;
-    height: 80%;
+    height: 600px;
     }
     .textolinea {
     width: 100vw;
-    height: 8vh;
+    height: 50px;
     font-size: 15px;
     text-align: center;
     }
-    .nombre-producto{
-    font-size: 13px;
+    .carrusel{
+    width: 50vw;
+    height: auto ;
     }
-    .precio{
-    font-size: 15px;
-    }
+}
+@media (min-width:1024px) and (max-width:1200px){
+    .secdestacados{
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .textolinea{
+            width: 100vw;
+            height: 30px;
+            font-size: 10px;
+        }
+        .imagen-carrusel{
+            width: 50vw;
+            height: 500px;
+        }
+        .carrusel{
+            width: 50vw;
+            height: auto ;
+            }
 }
 
 /*footer*/
 .footer{
     width: 100vw;
-    max-width: 100%;
-    height: 150px;
-    background-color:#ebebeb;
-    display: grid;
-    grid-template-areas: 
-    "mp envios contacto copy redes";
-    grid-template-columns: 1fr 1fr 1fr 3fr 2fr;
-    grid-template-rows: 170px;
-    grid-column-gap: 10px;
-    align-items: center;
+    height: 300px;
 }
-
+footer h3{
+    font-size: 20px;
+    font-family: 'monserrat sbold';
+    margin-top: 30px;
+}
+footer p{
+    font-size: 15px;
+    font-family: 'monserrat light';
+}
 .footer__mp{
     display: inline-block;
     font-family: 'monserrat light';
     font-size: 10px;
-    grid-area: mp;
     margin-left: 30px;
     margin-bottom: 40px;
     justify-self: center;
@@ -610,7 +472,6 @@ main article{
     display: inline-block;
     font-family: 'monserrat light';
     font-size: 10px;
-    grid-area: envios;
     margin-bottom: 63px;
     margin-left: 15px;
     justify-self: center;
@@ -620,7 +481,6 @@ main article{
     display: inline-block;
     font-family: 'monserrat light';
     font-size: 10px;
-    grid-area: contacto;
     margin-bottom: 75px;
     justify-self: center;
 }
@@ -631,7 +491,7 @@ main article{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    grid-area: redes;
+    margin-top: 20px;
 }
 .facebook{
     width: 40px;
@@ -647,19 +507,22 @@ main article{
 }
 
 .footer__copy{
+    width: 100vw;
     text-align:center;
     font-family: 'monserrat light';
     font-size: 13px;
-    grid-area: copy;
+    display: flex;
+    align-items: center;
 }
+
 /*media query footer*/
 /*mobile*/
 @media (max-width:320px){
     .footer{
         width: 100vw;
-        height:50vh ;
+        height:200px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 50px);
         grid-template-areas:"mp"
                             "envios"
                             "contacto"
@@ -682,18 +545,10 @@ main article{
         font-size: 7px;
     }
 }
-/*mobile*/
-@media (min-width:321px) and (max-width: 480px) {
+mobile*@media (min-width:321px) and (max-width: 480px) {
     .footer{
         width: 100vw;
-        height: 50vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas:"mp"
-                            "envios"
-                            "contacto"
-                            "redes"
-                            "copy";
+        height: 200px;
     }
     .footer__mp{
     font-size: 10px;
@@ -724,10 +579,12 @@ main article{
     justify-content: space-evenly;
     margin-left: 20px;
     }
+
     .footer__copy{
     font-size: 10px;
     }
 }
+
 /*tableta*/
 @media (min-width:481px) and (max-width:600px) {
     .footer{
@@ -814,12 +671,14 @@ main article{
         flex-direction: row;
         justify-content: space-evenly;
         margin-left: 20px;
+        margin-top: 20px;
         }
         .footer__copy{
-            
+        width: 100vw;
         font-size: 8px;
+        text-align: center;
         }
-}
+} 
 
 .seccioncontacto {
     width: 100%;
@@ -933,10 +792,10 @@ main article{
     margin-top: 50px;
     background-color: white;
 }
-
+/*seccion productos*/
 .seccion-productos{
-    height: 1300px;
-    position: relative;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.678);
 }
 
 .filtro{
@@ -951,80 +810,11 @@ main article{
     margin-top: 10px;
 }
 
-.tarjeta1{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 100px;
-    position: absolute;
-    top:150px ;
-    left:40px ;
-}
 
-.tarjeta2{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 150px;
-    position: absolute;
-    top:150px ;
-    left:370px ;
-}
-
-.tarjeta3{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 250px;
-    position: absolute;
-    top:150px ;
-    left:650px ;
-}
-.tarjeta4{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 100px;
-    position: absolute;
-    top: 700px ;
-    left: 40px ;
-}
-.tarjeta5{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 150px;
-    position: absolute;
-    top:700px ;
-    left: 370px ;
-}
-.tarjeta6{
-    width:300px;
-    height: 450px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 250px;
-    position: absolute;
-    top:700px ;
-    left:650px ;
-}
 
 .imagen-tarjeta{
-    width: 300px;
-    height: 380px;
-    padding: 30px 30px 40px 30px;
-    
+    width: 100%;
+    height: 350px;
 }
 
 .pie{
