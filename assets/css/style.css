@@ -18,8 +18,8 @@ body{
 }
 /*header*/
 .header{
-    background-color: rgba(253, 253, 253, 0.938);
-    height: 151px;
+    background-color: white;
+    height: auto;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -28,94 +28,18 @@ body{
     justify-content: space-between;
     overflow:hidden;
 }
-.header__logo{
+.fondo{
+    background-color: white;
+}
+.header-img{
+    width: 100px;
     border-radius: 100%;
-    margin-left: 60px;
-}
-.header__logo img{
-    width: 120px;
-    border-radius: 100%;
-}
-/*media query header*/
-/*mobile*/
-@media (max-width:320px){
-    .header{
-        width: 100vw;
-        height: 50px;
-    }
-    .header__logo{
-        width: 15%;
-        margin-left: 10px;
-    }
-    .header__logo img{
-        width: 100%;
-    }
-}
-/*mobile*/
-@media (min-width:321px) and (max-width:480px) {
-    .header{
-        width: 100vw;
-        height: 80px;
-    }
-    .header__logo{
-        width: 20%;
-    margin-left: 6px;
-    }
-    .header__logo img{
-        width: 100%;
-    }
-}
-/*mobile*/
-@media ( min-width:481px) and (max-width: 600px) {
-    .header{
-        width: 100vw;
-        height: 20vh;
-    }
-    .header__logo{
-        width: 15%;
-        margin-left: 20px;
-    }
-    .header__logo img{
-        width: 100%;
-    }
-}
-/*tableta*/
-@media ( min-width:601px) and (max-width: 768px) {
-    .header{
-        width: 100vw;
-        height: 20vh;
-    }
-    .header__logo{
-        width: 20%;
-        margin-left: 30px;
-    }
-    .header__logo img{
-        width: 100%;
-    }
 }
 
 /*navegacion*/
-.nav{
-    float: right;
-    height: 100px;
-    list-style-type: none;
-    margin-right: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.nav__menu{
-    width: 80vw;
-    list-style-type: none;
-    font-size: 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
 
-.nav__textonav{
+.textonav{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -127,7 +51,7 @@ body{
     border-bottom: 0px solid black;
     transition: all ease-in-out .25s;
 }
-.nav__textonav:hover{
+.textonav:hover{
     transform: translateY(-5px);
     border-bottom: 1px solid black;
 }
@@ -545,7 +469,7 @@ footer p{
         font-size: 7px;
     }
 }
-mobile*@media (min-width:321px) and (max-width: 480px) {
+@media (min-width:321px) and (max-width: 480px) {
     .footer{
         width: 100vw;
         height: 200px;
@@ -681,7 +605,7 @@ mobile*@media (min-width:321px) and (max-width: 480px) {
 } 
 
 .seccioncontacto {
-    width: 100%;
+    width: 100vw;
     height: 800px;
     background-image: url(../img/materiales-macrame.jpg);
     background-size: cover;
@@ -706,7 +630,8 @@ mobile*@media (min-width:321px) and (max-width: 480px) {
     font-size: 20px;
     text-align: center;
     padding: 50px;
-    margin: 60px 60px 30px 320px;
+    margin-top:80px;
+    margin-left: 300px;
 }
 
 .recuadro{
@@ -728,52 +653,317 @@ mobile*@media (min-width:321px) and (max-width: 480px) {
     padding: 5px;
     border-color:rgb(85, 74, 74);
 }
+/*media query contacto*/
+@media (max-width:320px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 600px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .form{
+        width: 100%;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
 
+@media (min-width:321px) and (max-width:480px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 700px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .form{
+        width: 90%;
+        font-size: 12px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+@media (min-width:481px) and (max-width:600px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 700px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 15px;
+        line-height: 10px;
+    }
+    .form{
+        width: 90%;
+        font-size: 12px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+@media (min-width:601px) and (max-width:768px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 800px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .form{
+        width: 90%;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+@media (min-width:769px) and (max-width:1000px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 800px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .form{
+        width: 80%;
+        height: 550px;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+}
+@media (min-width:769px) and (max-width:1000px){
+    .seccioncontacto{
+        width: 100vw;
+        height: 900px;
+    }
+    .contactanos{
+        font-family: "monserrat light";
+        height: 70px;
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .form{
+        width: 80%;
+        height: 600px;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+}
+/*seccion envios*/
 .seccionenvios{
     width: 100%;
-    height: 100%;
+    height:800px;
     background-image: url(../img/hilos.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.comprar{
+    width: 70%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.815);
+    margin: 20px 20px 40px 0px;
+}
+.sucursales{
+    width: 70%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
 .textolinea--envios{
-    background-color:#ebebeb;
+    background-color:#f5f0f0e1;
     font-size: 15px;
 }
-
-.comprar{
-    width: 500px;
-    height: 400px;
-    background-color: rgba(255, 255, 255, 0.808);
-    border: 1px solid black;
-    display: inline-block;
-    font-family:'monserrat light';
-    font-size: 20px;
-    padding: 20px 40px 20px 40px;
-    margin: 100px 50px 100px 50px;
-    line-height: 40px;
-}
-
-.sucursales{
-    width: 500px;
-    height: 350px;
-    background-color: rgba(255, 255, 255, 0.808);
-    border: 1px solid black;
-    font-family:'monserrat light';
-    font-size: 20px;
-    padding: 20px 30px 20px 30px;
-    display: inline-block;
-    line-height: 50px;
-    margin: 20px 40px 20px 40px;
-}
-
 .titulo{
-    background-color: rgba(217, 185, 230, 0.534);
     text-align: center;
+    font-family: "monserrat light";
+    margin: 10px 0px 20px 0px;
 }
-
+.textoenvios{
+    font-family: "monserrat sbold";
+    font-size: 15px;
+    line-height: 30px;
+}
+/*media query envios*/
+@media (max-width:320px){
+    .textolinea--envios{
+        font-size: 12px;
+    }
+    .seccionenvios{
+        width: 100vw;
+        height: 500px;
+    }
+    .comprar{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .sucursales{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .textoenvios{
+        line-height: 15px;
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+} 
+@media (min-width:321px) and (max-width:480px){
+    .textolinea--envios{
+        font-size: 15px;
+    }
+    .seccionenvios{
+        width: 100vw;
+        height: 500px;
+    }
+    .comprar{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .sucursales{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .textoenvios{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+} 
+@media (min-width:481px) and (max-width:600px){
+    .textolinea--envios{
+        font-size: 15px;
+    }
+    .seccionenvios{
+        width: 100vw;
+        height: 600px;
+    }
+    .comprar{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .sucursales{
+        width: 80%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .textoenvios{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+} 
+@media (min-width:601px) and (max-width:768px){
+    .textolinea--envios{
+        font-size: 15px;
+    }
+    .seccionenvios{
+        width: 100vw;
+        height: 700px;
+    }
+    .comprar{
+        width: 90%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .sucursales{
+        width: 90%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .textoenvios{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+} 
+@media (min-width:769px) and (max-width:1000px){
+    .textolinea--envios{
+        font-size: 15px;
+    }
+    .seccionenvios{
+        width: 100vw;
+        height: 800px;
+    }
+    .comprar{
+        width: 90%;
+        height: 300px;
+        margin-left: 30px;
+    }
+    .sucursales{
+        width: 90%;
+        height: 300px;
+        margin-left: 30px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .textoenvios{
+        line-height: 30px;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    @media (min-width:1001px) and (max-width:1500px){
+        .textolinea--envios{
+            font-size: 15px;
+        }
+        .seccionenvios{
+            width: 100vw;
+            height: 1000px;
+        }
+        .comprar{
+            width: 90%;
+            height: 400px;
+        }
+        .sucursales{
+            width: 90%;
+            height: 400px;
+            margin-left: 60px;
+        }
+        .titulo{
+            font-size: 20px;
+        }
+        .textoenvios{
+            line-height: 30px;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+}
+/*nosotros*/
 .seccion-nosotros{
-    height: 1000px;
+    height: 800px;
     background-image: url(../img/textura.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -783,14 +973,151 @@ mobile*@media (min-width:321px) and (max-width: 480px) {
     width: 100%;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.678);
-    font-family: monserrat light;
+    font-family: "monserrat light";
     font-size: 20px;
     padding: 50px 50px 50px 50px;
 }
 .video{
-    margin-left: 400px;
-    margin-top: 50px;
+    margin-top: 10px;
     background-color: white;
+}
+@media (max-width:320px){
+    .textolinea{
+        width: 100vw;
+        height: 30px;
+    }
+    .textonosotros{
+        height: 200px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 20px;
+    }
+    .video{
+        width: 90%;
+        height: 180px;
+    }
+}
+@media (min-width:321px) and (max-width:480px){
+    .seccion-nosotros{
+        width: 100vw;
+        height: 900px;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 40px;
+    }
+    .textonosotros{
+        height: 220px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 30px;
+    }
+    .video{
+        width: 70%;
+        height: 200px;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:481px) and (max-width:600px){
+    .seccion-nosotros{
+        width: 100vw;
+        height: 950px;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 45px;
+    }
+    .textonosotros{
+        height: 220px;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 30px;
+    }
+    .video{
+        width: 70%;
+        height: 200px;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:601px) and (max-width:768px){
+    .seccion-nosotros{
+        width: 100vw;
+        height: 1000px;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 45px;
+    }
+    .textonosotros{
+        height: 220px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 30px;
+    }
+    .video{
+        width: 70%;
+        height: 300px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:769px) and (max-width:1000px){
+    .seccion-nosotros{
+        width: 100vw;
+        height: 1100px;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 50px;
+    }
+    .textonosotros{
+        height: 220px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 30px;
+    }
+    .video{
+        width: 70%;
+        height: 350px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:1001px) and (max-width:1500px){
+    .seccion-nosotros{
+        width: 100vw;
+        height: 1200px;
+    }
+    .textolinea{
+        width: 100vw;
+        height: 50px;
+    }
+    .textonosotros{
+        height: 220px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px 10px 30px;
+    }
+    .video{
+        width: 60%;
+        height: 400px;
+        margin-left: 200px;
+        margin-top: 30px;
+    }
 }
 /*seccion productos*/
 .seccion-productos{
@@ -799,15 +1126,14 @@ mobile*@media (min-width:321px) and (max-width: 480px) {
 }
 
 .filtro{
-    background-color: #ebebeb;
-    font-family: monserrat sbold;
-    font-size: 15px;
-    padding: 20px 10px 20px 10px;
+    font-family:"monserrat light";
+    font-size:15px;
+    padding: 10px;
 }
 
 .boton-filtro{
     font-family: monserrat light;
-    margin-top: 10px;
+    margin: 0px 10px 20px 10px;
 }
 
 

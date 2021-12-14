@@ -12,51 +12,59 @@
 </head>
 <body>
     <header class="header">    
-        <!-- logo -->
-        <div class="header__logo">   
-            <img src="../assets/img/IMG-20210511-WA0051.jpg" alt="logo">
-        </div> 
-        <!--menu de navegacion  -->
-            <nav class="nav">
-                <a class="nav__textonav" href="../index.html">Inicio</a>
-                <a class="nav__textonav" href="./productos.html">Productos</a> 
-                <a class="nav__textonav" href="./nosotros.html">Nosotros</a>  
-                <a class="nav__textonav"  href="./envios.html">Envios</a>
-                <a class="nav__textonav" href="./contacto.html">Contacto</a>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid fondo">
+              <a class="navbar-brand" href="../index.html">
+                  <img class="header-img" src="../assets/img/IMG-20210511-WA0051.jpg" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item textonav">
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item textonav">
+                    <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item textonav">
+                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item textonav">
+                    <a class="nav-link" href="../pages/envios.html">ENVIOS</a>
+                  </li>
+                  <li class="nav-item textonav">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <section class="seccioncontacto">
         <div class="contactanos">
-            <h2>¡Contactanos!</h2>
+            <p>¡Contactanos!</p>
             <p>Podras enviarnos tu consulta aqui:</p> 
         </div>
     <!--formulario-->
     <form class="form" action="servidor.php">    
-        <div>
-            <label for="Nombre">Nombre:</label>  
-            <input class="recuadro" type="text" name="nombre" placeholder="Escribe tu nombre aqui..."> 
-        </div>      
-        <br>
-        <div>
-            <label for="Apellido">Apellido:</label>
-            <input class="recuadro" type="text" name="Apellido" placeholder="Escribe tu apellido aqui...">
-        </div>   
-        <br>
-        <div>
-            <label for="Email">Email:</label> 
-            <input class="recuadro" type="email" name="mail" placeholder="Juanperez@hotmail.com">  
-        </div>      
-        <br> 
-        <div>
-            <label for="Teléfono">Teléfono:</label>
-            <input class="recuadro" type="tel" name="Teléfono" placeholder="123456789">
-        </div>          
-        <br>    
-        <!--text area -->
-        <p>Mensaje</p>  
-            <textarea class="recuadro" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>   
-            <br>      
-            <input class="boton" type= "submit" value="Enviar">       
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mensaje</label>
+          </div>
     </form>
     </section>
     <footer class="">    
