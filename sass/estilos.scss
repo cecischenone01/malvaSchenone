@@ -13,6 +13,11 @@ $font-sbold: monserrat sbold;
 $fondo-titulos: #ebebeb;
 $size-titulos: 25px;
 
+@import "contacto";
+@import "productos";
+@import "envios";
+@import "nosotros";
+
 //body
 body{
     background-color: #ebebeb;
