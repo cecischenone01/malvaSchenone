@@ -835,14 +835,10 @@ body {
   align-items: center;
 }
 .destacados .destacados__texto {
-  width: 100vw;
-  max-width: 100%;
-  height: 55px;
   background-color: #ebebeb;
-  font-family: monserrat light;
+  font-size: 20px;
   text-align: center;
-  font-size: 25px;
-  padding-top: 10px;
+  width: 100vw;
 }
 .destacados .destacados__carrusel {
   width: 60%;

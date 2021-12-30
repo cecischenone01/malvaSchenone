@@ -18,6 +18,13 @@ $size-titulos: 25px;
 @import "envios";
 @import "nosotros";
 
+@mixin title {
+    background-color: #ebebeb;
+    font-size: 20px;
+    text-align: center;
+    width: 100vw;
+}
+
 //body
 body{
     background-color: #ebebeb;
@@ -240,15 +247,7 @@ body{
     align-items: center;
 
     .destacados__texto{
-        width: 100vw;
-        max-width: 100%;
-        height: 55px;
-        background-color:$fondo-titulos;
-        font-family: $font-light;
-        text-align: center;
-        font-size:$size-titulos;
-        padding-top: 10px;
-        
+        @include title()
     }
     .destacados__carrusel{
         width: 60%;
