@@ -1,0 +1,218 @@
+@media only screen and (min-width: 375px){
+
+    header, nav{
+        background-color: white;
+    }
+
+    .icon-nav{
+        font-size: $fs-cinco;
+    }
+    .span-artist{
+        margin-left: 1.5rem;
+    }
+
+    .mtop-artist{
+        margin-top: 12rem;
+    }
+
+    .mtop-portfolio{
+        margin-top: 8rem;
+    }
+
+    .m-top{
+        margin-top: 13rem;
+    }
+
+    .txt-foto{
+        color: $white;
+        font-size: $fs-tres;
+        padding: 0.3rem;
+        font-weight: $fw-400;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .carousel-container {
+        h2{
+            font-size: 55px;
+            width: 46%;
+        }
+    }
+    .icon-nav{
+        font-size: $fs-ocho;
+    }
+
+    .m-index{
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+
+    .mtop-artist{
+        margin-top: 10rem;
+    }
+
+    .div-artist{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .art-artist{
+        margin-top: 4.3rem;
+    }
+
+    .img-artist{
+        width: 100%;
+        margin-left: 2.5rem;
+        padding-bottom: 1rem;
+        margin-top: 5rem;
+    }
+
+    .span-artist{
+        margin-left: 1.8rem;
+    }
+
+    .aside-artist{
+        width: 70%;
+        padding: $p-1;
+        margin-right: 4rem;
+        margin-top: 10rem;
+    }
+
+    .story-artist{
+        line-height: 1.5;
+        font-weight: $fw-400;
+        font-size: $fs-siete;
+    }
+
+    .title-artist{
+        color: $grey;
+        font-size: $fs-tres;
+        margin-top: $m-1;
+        text-align: center;
+        font-weight: $fw-600;
+        height: 3vh;
+    }
+
+    .txt-foto{
+        color: $white;
+        font-size: $fs-cinco;
+        padding: 0.3rem;
+        font-weight: $fw-400;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+    header, nav{
+        background-color: $white;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    header nav div ul{
+        margin: 0;
+        width: 100%;
+        background-color: $white;
+        position: fixed;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+
+    header, nav{
+        background-color: $white;
+    }
+    .icon-nav{
+        font-size: $fs-ocho;
+    }
+    
+    .m-index{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .mtop-artist{
+        margin-top: 8rem;
+    }
+
+    .img-artist{
+        width: 100%;
+        margin-top: 8rem;
+        padding-bottom: $p-1;
+    }
+
+    .span-artist{
+        font-size: $fs-ocho;
+    }
+    
+    .aside-artist{
+        width: 60%;
+        margin-right: 5rem;
+        margin-top: 13rem;
+    }
+
+    .title-artist{
+        font-size: $fs-cinco;
+        padding-top: $p-1;
+    }
+
+    .story-artist{
+        line-height: 1.8;
+        font-weight: $fw-400;
+        padding-top: $p-2;
+        font-size: $fs-ocho;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .icon-nav{
+        font-size: $fs-dos;
+    }
+    
+    .mtop-artist{
+        margin-top: 6rem;
+    }
+
+    .art-artist{
+        margin-left: 5rem;
+    } 
+
+    .img-artist{
+        width: 100%;
+        margin-top: 10rem;
+        padding-bottom: $p-1;
+    }
+
+    .aside-artist{
+        width: 60%;
+        height: auto;
+        margin-right: 5rem;
+        margin-top: 15rem;
+    }
+
+    .title-artist{
+        font-size: 3.5rem;
+        padding-top: $p-1;
+    }
+
+    .span-artist{
+        font-size: $fs-ocho;
+    }
+
+    .story-artist{
+        line-height: 2;
+        font-weight: $fw-400;
+        padding-top: 3rem;
+        font-size: $fs-ocho;
+    }
+
+    .txt-foto{
+        color: $white;
+        font-size: $fs-siete;
+        padding: 0.3rem;
+        font-weight: $fw-400;
+    }
+}

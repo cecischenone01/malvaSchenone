@@ -1,0 +1,43 @@
+nav{
+    font-family: $main-font;
+    font-size: $fs-seis;
+    padding: $p-2;
+    height: 13vh;
+}
+nav{
+    div{
+        ul{
+            li{
+                padding: 0.7rem;
+                a{
+                    text-transform: uppercase;
+                    color: $black !important;
+                    font-size: $fs-siete;
+                    font-weight: $fw-600;
+                    text-decoration: none;
+                    transform: translateY(0px);
+                    transition: all ease-in-out .3s;
+                    &:hover{
+                        transform: translateY(-5px);
+                        transition: all ease-in-out .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg-nav{
+    background-color: $grey;
+}
+
+.icon-nav{
+    text-decoration: none !important;
+    font-size: $fs-dos;
+    font-weight: $fw-600;
+    padding: $p-1;
+    color: $black;
+}
+.icon-nav:hover{
+    color: $black;
+}
